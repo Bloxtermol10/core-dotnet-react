@@ -1,5 +1,6 @@
 ﻿using Core.Infraestructure;
 using Core.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
@@ -29,6 +30,7 @@ namespace Core.Controllers
         }
         [HttpGet]
         [Route("login")]
+        
         public dynamic IniciarSesion([FromQuery] string userName, string password)
         {
             try
@@ -46,7 +48,7 @@ namespace Core.Controllers
                         new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
                         new Claim(JwtRegisteredClaimNames.Iat, DateTime.UtcNow.ToString()),
                         new Claim("id", user.IdUsuario.ToString()),
-                        
+                        new Claim("userName", userName)
                         };
 
                     var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwt.Key));
@@ -60,17 +62,53 @@ namespace Core.Controllers
                         signingCredentials: sigIn
                         );
 
+                    var writeToken = new JwtSecurityTokenHandler().WriteToken(token);
 
-                    return Ok(new JwtSecurityTokenHandler().WriteToken(token)) ;
+                    user.Token = writeToken;
+                    return Ok(user);
                 };
                 return StatusCode(401, "Usuario Incorrecto");
-                
+
             }
             catch (Exception ex) {
                 return StatusCode(500, ex.Message);
             }
-           
-            
+
+
+        }
+
+        [HttpGet("{nombre}")]
+        public IActionResult Get(string nombre)
+        {
+            try
+            {
+                var identity = HttpContext.User.Identity as ClaimsIdentity;
+
+                var _jwt = new Jwt();
+
+                var rToken = _jwt.validarToken(identity);
+
+                if (!rToken.success) return StatusCode(404,rToken);
+
+                UsuarioVO usuario = rToken.result;
+
+                if(usuario.idRol == 1)
+                {
+                    var user = _seguridad.getUsuario(nombre);
+                    return Ok(user);
+                }
+                else
+                {
+                    return Forbid("No ktienes peromisos para estos");
+                }
+
+
+
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
         }
     }
 }
