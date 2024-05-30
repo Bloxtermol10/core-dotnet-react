@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Core.Infraestructure;
 
-namespace YourNamespace.Controllers
+namespace Core.Controllers
 {
     [ApiController]
     [Route("api/BasicasLista")]
