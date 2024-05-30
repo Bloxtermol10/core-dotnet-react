@@ -15,10 +15,12 @@ namespace Core.Infraestructure
         public decimal? decimalNull = null;
         public DateTime? dateNull = null;
         protected SqlConnection connection;
+        public IConfiguration configuration { get; set; }
 
         //El constructor
         public BaseDao(IConfiguration configuration)
         {
+            this.configuration = configuration;
             connectionString = configuration.GetConnectionString("DefaultConnection");
             connection = new SqlConnection(connectionString);
         }

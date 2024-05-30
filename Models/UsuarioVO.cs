@@ -44,7 +44,7 @@ namespace Core.Models
         public String respuesta3 { get; set; }
         public String pasword1 { get; set; }
         public String pasword2 { get; set; }
-
+        
         public List<RolVO> Rol { get; set; }
         public List<FormularioVO> Formulario { get; set; }
        
