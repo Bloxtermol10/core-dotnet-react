@@ -28,7 +28,7 @@ builder.Services.AddControllers(config =>
 builder.Services.AddScoped<DbContext>(provider =>
 {
     var configuration = provider.GetRequiredService<IConfiguration>();
-    return new DbContext(configuration);
+    return new DbContext(configuration.GetConnectionString("DefaultConnection"));
 });
 // Add configuration service
 builder.Services.AddSingleton<IConfiguration>(builder.Configuration); // Environment Variables appssetings.json
