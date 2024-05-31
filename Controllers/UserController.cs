@@ -28,20 +28,14 @@ namespace Core.Controllers
             _seguridad = seguridad;
             configuration = _seguridad.configuration;
         }
-        
+        [Authorize(Policy = "Admon")]
         [HttpGet("{nombre}")]
         public IActionResult Get(string nombre)
         {
             try
             {
-              
-                    var user = _seguridad.getUsuario(nombre);
-                    return Ok(user);
-              
-            
-                 
-
-
+                var user = _seguridad.getUsuario(nombre);
+                return Ok(user);
             }
             catch (Exception ex)
             {

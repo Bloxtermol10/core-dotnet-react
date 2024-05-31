@@ -73,7 +73,8 @@ namespace Namespace
                     List<Claim> claims = new List<Claim>
                       {
                           new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-                          new Claim(JwtRegisteredClaimNames.Iat, new DateTimeOffset(utcNow).ToUnixTimeSeconds().ToString(), ClaimValueTypes.Integer64)
+                          new Claim(JwtRegisteredClaimNames.Iat, new DateTimeOffset(utcNow).ToUnixTimeSeconds().ToString(), ClaimValueTypes.Integer64),
+                          new Claim("Rol","Admon")
                       };
 
                     DateTime expiredDateTime = utcNow.AddDays(1);
