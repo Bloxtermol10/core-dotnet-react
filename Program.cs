@@ -24,7 +24,7 @@ builder.Services.AddControllers(config =>
 }
 
     );
-
+ 
 builder.Services.AddScoped<DbContext>(provider =>
 {
     var configuration = provider.GetRequiredService<IConfiguration>();
