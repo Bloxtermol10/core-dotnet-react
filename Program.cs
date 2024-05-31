@@ -11,10 +11,11 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
 
+// Add services to the container.
 builder.Services.AddControllers(config =>
-{
+{ 
+    // Add Athorization on all controllers - Comment for unlok endpoints
     var policy = new AuthorizationPolicyBuilder()
                         .RequireAuthenticatedUser()
                         .Build();
@@ -22,17 +23,21 @@ builder.Services.AddControllers(config =>
 }
 
     );
-// Add configuration services
-builder.Services.AddSingleton<IConfiguration>(builder.Configuration);
+// Add configuration service
+builder.Services.AddSingleton<IConfiguration>(builder.Configuration); // Environment Variables appssetings.json
 builder.Services.AddTransient<ComunesDao>();
 builder.Services.AddTransient<Seguridad>();
+
+
+
 // Configurar JWT
-var key = Encoding.ASCII.GetBytes(builder.Configuration["Jwt:Key"]!);
+
+var key = Encoding.ASCII.GetBytes(builder.Configuration["Jwt:Key"]!);  // Environment Variables appssetings.json - Key
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
     options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-})
+}) 
 .AddJwtBearer(options =>
 {
     options.TokenValidationParameters = new TokenValidationParameters
@@ -41,11 +46,11 @@ builder.Services.AddAuthentication(options =>
         ValidateAudience = true,
         ValidateLifetime = true,
         ValidateIssuerSigningKey = true,
-        ValidIssuer = builder.Configuration["Jwt:Issuer"],
-        ValidAudience = builder.Configuration["Jwt:Audience"],
+        ValidIssuer = builder.Configuration["Jwt:Issuer"], // Environment Variables appssetings.json
+        ValidAudience = builder.Configuration["Jwt:Audience"],// Environment Variables appssetings.json
         IssuerSigningKey = new SymmetricSecurityKey(key)
     };
-});// Configurar JWT
+});
 
 builder.Services.AddAuthorization();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
