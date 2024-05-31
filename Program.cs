@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Text;
+using Core.ORM;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,6 +24,12 @@ builder.Services.AddControllers(config =>
 }
 
     );
+
+builder.Services.AddScoped<DbContext>(provider =>
+{
+    var configuration = provider.GetRequiredService<IConfiguration>();
+    return new DbContext(configuration);
+});
 // Add configuration service
 builder.Services.AddSingleton<IConfiguration>(builder.Configuration); // Environment Variables appssetings.json
 builder.Services.AddTransient<ComunesDao>();
