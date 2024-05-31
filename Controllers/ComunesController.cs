@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Core.Infraestructure;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Core.Controllers
 {
@@ -14,9 +15,11 @@ namespace Core.Controllers
             _comunesDao = comunesDao;
         }
 
+        
         [HttpGet("{nombre}")]
         public IActionResult Get(string nombre)
         {
+   
             try
             {
                 var lista = _comunesDao.ObtenerLista(nombre);

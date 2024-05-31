@@ -28,6 +28,7 @@ namespace Core.Controllers
             _seguridad = seguridad;
             configuration = _seguridad.configuration;
         }
+        [AllowAnonymous]
         [HttpGet]
         [Route("login")]
         
@@ -82,26 +83,12 @@ namespace Core.Controllers
         {
             try
             {
-                var identity = HttpContext.User.Identity as ClaimsIdentity;
-
-                var _jwt = new Jwt();
-
-                var rToken = _jwt.validarToken(identity);
-
-                if (!rToken.success) return StatusCode(404,rToken);
-
-                UsuarioVO usuario = rToken.result;
-
-                if(usuario.idRol == 1)
-                {
+              
                     var user = _seguridad.getUsuario(nombre);
                     return Ok(user);
-                }
-                else
-                {
-                    return Forbid("No ktienes peromisos para estos");
-                }
-
+              
+            
+                 
 
 
             }
