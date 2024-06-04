@@ -15,7 +15,7 @@ namespace Core.Controllers
             _comunesDao = comunesDao;
         }
 
-        
+        [AllowAnonymous]
         [HttpGet("{nombre}")]
         public IActionResult Get(string nombre)
         {
