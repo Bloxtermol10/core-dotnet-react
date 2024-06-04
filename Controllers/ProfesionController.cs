@@ -1,6 +1,6 @@
 ﻿using Core.ORM;
 using Core.ORM.Helpers;
-using CoreORM.Entities;
+using Core.ORM.Entities;
 using Microsoft.AspNetCore.Mvc;
 
 

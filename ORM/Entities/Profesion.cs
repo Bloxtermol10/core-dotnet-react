@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace CoreORM.Entities
+namespace Core.ORM.Entities
 {
     [TableSchema("Comunes")]
     public class Profesion

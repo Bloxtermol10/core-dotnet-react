@@ -1,13 +1,10 @@
 ﻿using System;
 using System.Data;
 using System.Data.SqlClient;
-using Microsoft.Extensions.Configuration;
-using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
 using Core.Models;
 using System.ComponentModel.DataAnnotations;
-using static System.Net.Mime.MediaTypeNames;
+
 
 namespace Core.ORM
 {
