@@ -4,6 +4,7 @@ import './App.css'
 import { useEffect, useState } from 'react'
 
 import { ComunesService } from './services/Comunes.service';
+import { MessageBand } from './components/MessageBand';
 
 function App() {
   const [id, setId] = useState("");
@@ -35,6 +36,7 @@ function App() {
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
+        <MessageBand content={"Hola"} show={true} type={"Success"} />
         <select name="Ciudades" id="">
           {/* {data && data.map((item: any) => <option value={item.id}>{item.name}</option>)} */}
         </select>

@@ -1,6 +1,6 @@
 import axios from "axios"
 
-export default function WeatherForecastService( ): any {
+export default function WeatherForecastService( ) {
 
     return axios.get('api/weatherforecast')
     
