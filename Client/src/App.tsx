@@ -12,7 +12,6 @@ function App() {
   
   const fetchData = async () => {
     const {data} = await ComunesService(id)
-    const newData = JSON.stringify(data)
     console.log(data)
     SetData(data)
   }
@@ -42,11 +41,11 @@ function App() {
         </p>
         <MessageBand content={"Hola"} show={true} type={"Success"} />
         <select name="Ciudades" id="">
-          {/* {data && data.map((item: any) => <option value={item.id}>{item.name}</option>)} */}
+          {data && data.map((item: any) => <option value={item.id}>{item.nombre}</option>)}
         </select>
       </div>
       <p className="read-the-docs">
-        {data && JSON.stringify(data)}
+        
       </p>
     </>
   )
