@@ -1,10 +1,13 @@
 
 import academicsLogo from './assets/academics.svg'
 import './App.css'
-import { useEffect, useState } from 'react'
+import {  useEffect, useState } from 'react'
 
 import { ComunesService } from './services/Comunes.service';
 import { MessageBand } from './components/MessageBand';
+import Component1 from './components/Component1';
+import Component2 from './components/Component2';
+import Counter from './components/Counter/Counter';
 
 function App() {
   const [id, setId] = useState("");
@@ -40,7 +43,7 @@ function App() {
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
-        <MessageBand content={"Hola"} show={true} type={"Success"} />
+        
         <select name="Ciudades" id="">
           {/* {data && data.map((item: any) => <option value={item.id}>{item.name}</option>)} */}
         </select>
@@ -48,6 +51,9 @@ function App() {
       <p className="read-the-docs">
         {data && JSON.stringify(data)}
       </p>
+      <Component1 />
+      <Component2 />
+      <Counter  />
     </>
   )
 }
