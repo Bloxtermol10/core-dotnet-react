@@ -1,11 +1,10 @@
 import axios from "axios"
-import { getValidationError } from "../utilities/get-validation-error"
-import { SnackbarProvider, useSnackbar } from "../providers/Snackbar.provider"
+
 import { SnackbarUtilities } from "../utilities/snackbar-manage"
 
 export function AxiosInterceptor () {
     const updateHeader = (request : any) => {
-        const token = 'asjflaskjflñaskjflacxvzxcskj'
+        const token = localStorage.getItem('token')
         const newHeader = {
             ...request.headers,
             Authorization: `Bearer ${token}`,
@@ -16,14 +15,14 @@ export function AxiosInterceptor () {
     }
     
     axios.interceptors.request.use((request ) => {
-        if(request.url?.includes('api')) {
+        if(request.url?.includes('aspi')) {
             console.log(request.url)
             return request
         }
         return updateHeader(request)
     })
 
-    axios.interceptors.response.use((response) => {
+    axios.interceptors.response.use((response) => { 
         console.log("response",response)
         return response
     }, (error) => {
