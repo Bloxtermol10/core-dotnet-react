@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { sharingInformationService } from "../services/sharing-information.sevice"
+import { sharingInformationService } from "../RxJS/sharing-information.sevice"
 
 function Component1() {
   const [data, SetData] = useState("")

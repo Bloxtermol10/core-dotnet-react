@@ -1,4 +1,4 @@
-import { sharingCounterService } from "../../services/sharing-counter.service";
+import { sharingCounterService } from "../../RxJS/sharing-counter.service";
 
 function CounterButton() {
 

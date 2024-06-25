@@ -8,6 +8,7 @@ import { MessageBand } from './components/MessageBand';
 import Component1 from './components/Component1';
 import Component2 from './components/Component2';
 import Counter from './components/Counter/Counter';
+import Example from './pages/exmaple/Example';
 
 function App() {
   const [id, setId] = useState("");
@@ -50,9 +51,15 @@ function App() {
       <p className="read-the-docs">
         
       </p>
+
+      <h2>RxJS</h2>
+      <p>Recomendado para disparar eventos entre componentes o pasar informacion entre dos componentes</p>
       <Component1 />
       <Component2 />
       <Counter  />
+      <h2>Context</h2>
+      <p>Recomendado para compartir informacion entre componentes de una misma pagina</p>
+      <Example />
     </>
   )
 }
