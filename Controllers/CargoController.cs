@@ -22,8 +22,8 @@ namespace Core.ORM.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<Cargo>> GetCargoes()
         {
-            var Cargoes = _context.Set<Cargo>().ToList();
-            return Ok(Cargoes);
+            var Cargos = _context.Set<Cargo>().ToList();
+            return Ok(Cargos);
         }
 
         [HttpGet("{id}")]

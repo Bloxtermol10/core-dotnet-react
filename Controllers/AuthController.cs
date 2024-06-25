@@ -4,11 +4,13 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using Core.Infraestructure;
-using Core.Models;
+using Core.ORM;
+using Core.ORM.Entities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
+
 
 namespace Namespace
 {
@@ -18,10 +20,13 @@ namespace Namespace
     {
         private Seguridad _seguridad;
         private readonly IConfiguration configuration;
-        public AuthController(IConfiguration config, Seguridad seguridad)
+        private readonly DbContext _context;
+
+        public AuthController(IConfiguration config, Seguridad seguridad, DbContext context)
         {
             configuration = config;
             _seguridad = seguridad;
+            _context = context;
         }
 
         [AllowAnonymous]
@@ -33,7 +38,8 @@ namespace Namespace
             List<Claim> claims = new List<Claim>
             {
                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-                new Claim(JwtRegisteredClaimNames.Iat, new DateTimeOffset(utcNow).ToUnixTimeSeconds().ToString(), ClaimValueTypes.Integer64)
+                new Claim(JwtRegisteredClaimNames.Iat, new DateTimeOffset(utcNow).ToUnixTimeSeconds().ToString(), ClaimValueTypes.Integer64),
+                
             };
 
             DateTime expiredDateTime = utcNow.AddDays(1);
@@ -66,7 +72,8 @@ namespace Namespace
             try
             {
                 var res = _seguridad.validarUsuario(userName, password);
-                if (res == true)
+                var user = _context.Set<Usuario>().ToList().FirstOrDefault(user => user.clave == password);
+                if (res == true && user != null)
                 {
                     DateTime utcNow = DateTime.UtcNow;
 
@@ -74,7 +81,8 @@ namespace Namespace
                       {
                           new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
                           new Claim(JwtRegisteredClaimNames.Iat, new DateTimeOffset(utcNow).ToUnixTimeSeconds().ToString(), ClaimValueTypes.Integer64),
-                          new Claim("Rol","Admon")
+                          new Claim("Rol","Admon"),
+                          new Claim("IdUser", user.idUsuario.ToString()),
                       };
 
                     DateTime expiredDateTime = utcNow.AddDays(1);
