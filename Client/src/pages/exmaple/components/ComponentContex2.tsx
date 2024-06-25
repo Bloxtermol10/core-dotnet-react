@@ -6,7 +6,7 @@ function ComponentContex2() {
 
     <div>
       ComponentContex2
-
+    
       <p>{value && value}</p>
     </div>
   )

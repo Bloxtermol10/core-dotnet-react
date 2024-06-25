@@ -9,6 +9,10 @@ import Component1 from './components/Component1';
 import Component2 from './components/Component2';
 import Counter from './components/Counter/Counter';
 import Example from './pages/exmaple/Example';
+import { Provider } from 'react-redux';
+import store from './redux/store';
+import ComoponentRedux2 from './pages/exmaple/components/ComoponentRedux2';
+import ComponentRedux1 from './components/Redux/ComponentRedux1';
 
 function App() {
   const [id, setId] = useState("");
@@ -31,6 +35,8 @@ function App() {
 
   return (
     <>
+    <Provider store={store}>
+
       <div>
         <img src={academicsLogo} className="logo" alt="Academics logo" />
       </div>
@@ -60,6 +66,11 @@ function App() {
       <h2>Context</h2>
       <p>Recomendado para compartir informacion entre componentes de una misma pagina</p>
       <Example />
+      <h2>Redux</h2>
+      <p>Informacion global de la aplicaion</p>
+      <ComponentRedux1 />
+      <ComoponentRedux2 />
+    </Provider>
     </>
   )
 }

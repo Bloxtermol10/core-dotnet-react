@@ -1,10 +1,10 @@
+import { configureStore } from "@reduxjs/toolkit";
+import { userSlice } from "./states/user";
+
 export default configureStore({
     reducer: {
-        // Add the generated reducer as a specific top-level slice
-        [api.reducerPath]: api.reducer,
+        user: userSlice.reducer        
     },
-    // Adding the api middleware enables caching, invalidation, polling,
-    // and other useful features of `rtk-query`.
-    middleware: (getDefaultMiddleware) =>
-        getDefaultMiddleware().concat(api.middleware),
+    
+        
 })
