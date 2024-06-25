@@ -1,7 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { UserInfo } from "../../models/user.model";
 
-export const UserEmptyState = {
+export const UserEmptyState : UserInfo = {
     name: '',
+    role: '',
+    id : 0,
     email : '',
 }
 
@@ -13,7 +16,7 @@ export const userSlice = createSlice({
         createUser: (state, action) => {
             return action.payload
         },
-        updateUser: (state, action) => {
+        updateUser: (state, action ) => {
             return {...state, ... action.payload}
         },
         resetUser: () => {
