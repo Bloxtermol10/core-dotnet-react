@@ -4,9 +4,11 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using Core.Infraestructure;
+using Core.Models;
 using Core.ORM;
 using Core.ORM.Entities;
 using Microsoft.AspNetCore.Authorization;
+
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
@@ -64,11 +66,15 @@ namespace Namespace
         }
 
         [AllowAnonymous]
-        [HttpGet]
+        [HttpPost]
         [Route("login")]
 
-        public IActionResult IniciarSesion([FromQuery] string userName, string password)
+        public IActionResult IniciarSesion([FromBody] LoginRequest  loginRequest)
         {
+            var userName = loginRequest.UserName;
+            var password = loginRequest.Password;
+
+
             try
             {
                 var res = _seguridad.validarUsuario(userName, password);
