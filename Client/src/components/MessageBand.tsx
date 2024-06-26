@@ -1,28 +1,13 @@
 import { useEffect, useState } from 'react';
 import styles from './MessageBand.module.css';
+import { MessageBandProps, MessageBandType } from '../models/message-band.model';
+import { useDispatch } from 'react-redux';
+import { clearMessageBand } from '../redux/states/message-band.state';
 
-enum MessageBandType {
-    Success = 'Success',
-    Error = 'Error',
-    Warning = 'Warning',
-    Info = 'Info',
-}
-
-enum MessageBandPositionType {
-    Static = 'staticPosition',
-    Relative = 'relative',
-    Absolute = 'absolute',
-}
-interface MessageBandProps {
-    title: string;
-    message: string;
-    type: MessageBandType;
-    className?: string;
-}
 // Ejemplo de uso en un componente React
 export function MessageBand({ title, message, type, className = '' } : MessageBandProps) : JSX.Element {
     const [messageType, setMessageType] = useState(type);
-    
+    const dispatcher = useDispatch();
     useEffect(() => {
         setMessageType(type);
     }, [type]);
@@ -61,7 +46,7 @@ export function MessageBand({ title, message, type, className = '' } : MessageBa
 
 
     const handleClose = () => {
-        
+        dispatcher(clearMessageBand())
     };
 
     return (
@@ -82,6 +67,6 @@ export function MessageBand({ title, message, type, className = '' } : MessageBa
     );
 }
 
-export { MessageBandType, MessageBandPositionType };
+
 
 
