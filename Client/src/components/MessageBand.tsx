@@ -8,9 +8,16 @@ import { clearMessageBand } from '../redux/states/message-band.state';
 export function MessageBand({ title, message, type, className = '' } : MessageBandProps) : JSX.Element {
     const [messageType, setMessageType] = useState(type);
     const dispatcher = useDispatch();
+
     useEffect(() => {
         setMessageType(type);
     }, [type]);
+
+    useEffect(() => {
+        setTimeout(() => {
+            dispatcher(clearMessageBand());
+        }, 3000);
+    }, [messageType]);
 
     const containerClass = `
         ${styles.messageContainer} 
@@ -19,6 +26,8 @@ export function MessageBand({ title, message, type, className = '' } : MessageBa
         ${type === 'Warning' ? styles.messageContainerWarning : ''} 
         
     `;
+
+    
     const getIcon = () => {
         switch (messageType) {
             case MessageBandType.Success:

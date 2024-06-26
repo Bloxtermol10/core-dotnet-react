@@ -1,6 +1,4 @@
 import axios from "axios";
-import { MessageBandUtilities } from "../utilities/message-band-manager";
-import { getValidationError } from "../utilities/get-validation-error";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { setMessageBand } from "../redux/states/message-band.state";
