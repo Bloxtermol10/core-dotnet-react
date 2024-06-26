@@ -4,6 +4,8 @@ import { createUser } from "../../redux/states/user"
 import { userAdapter } from "../../adapters/user.adapter"
 import { useSelector } from "react-redux"
 import { loginAdapter } from "../../adapters/login.adapter"
+import { Link } from "react-router-dom"
+import { PrivateRoutes } from "../../models/routes"
 
 
 function Login() {
@@ -39,6 +41,7 @@ function Login() {
       <p><b>Name:</b> {UserState.name}</p>
       <p><b>Email:</b> {UserState.role}</p>
 
+      <Link to={PrivateRoutes.LAB}>Laboratorio</Link>
     </div>
   )
 }

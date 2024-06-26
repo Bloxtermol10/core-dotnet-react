@@ -1,16 +1,16 @@
-import academicsLogo from '../../assets/academics.svg';
-import { useEffect, useState } from 'react';
-import { ComunesService } from '../../services/Comunes.service';
-import Component1 from '../../components/Component1';
-import Component2 from '../../components/Component2';
-import Counter from '../../components/Counter/Counter';
-import Example from '../exmaple/Example';
-import ComoponentRedux2 from '../exmaple/components/ComoponentRedux2';
-import ComponentRedux1 from '../../components/Redux/ComponentRedux1';
-import { MessageBand } from '../../components/MessageBand';
+import academicsLogo from '../../../assets/academics.svg';
+import {  useState } from 'react';
+import { ComunesService } from '../../../services/Comunes.service';
+import Component1 from '../../../components/Component1';
+import Component2 from '../../../components/Component2';
+import Counter from '../../../components/Counter/Counter';
+import Example from '../../exmaple/Example';
+import ComoponentRedux2 from '../../exmaple/components/ComoponentRedux2';
+import ComponentRedux1 from '../../../components/Redux/ComponentRedux1';
+import { MessageBand } from '../../../components/MessageBand';
 
 import { useSelector } from 'react-redux';
-import { AppStore } from '../../redux/store';
+import { AppStore } from '../../../redux/store';
 
 
 
@@ -24,11 +24,6 @@ export default function LabPage() {
     console.log(data);
     SetData(data);
   };
-
-  useEffect(() => {
-    fetchData();
-    
-  }, []);
 
   return (
     <>
@@ -48,7 +43,7 @@ export default function LabPage() {
         </p>
 
         <select name="Ciudades" id="">
-          {data && data.map((item: any) => <option value={item.id}>{item.nombre}</option>)}
+          {data && data.map((item: any) => <option key={item.id} value={item.id}>{item.nombre}</option>)}
         </select>
       </div>
       <p className="read-the-docs">
