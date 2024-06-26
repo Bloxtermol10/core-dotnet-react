@@ -1,6 +1,6 @@
 import axios from "axios"
-
-import { SnackbarUtilities } from "../utilities/snackbar-manage"
+import { MessageBandUtilities } from "../utilities/message-band-manager"
+import { getValidationError } from "../utilities/get-validation-error"
 
 export function AxiosInterceptor () {
     const updateHeader = (request : any) => {
@@ -26,7 +26,7 @@ export function AxiosInterceptor () {
         console.log("response",response)
         return response
     }, (error) => {
-        SnackbarUtilities.error((error.code))
+        MessageBandUtilities.error("Service Error", getValidationError(error.code))
         return Promise.reject(error)}
     )
 }

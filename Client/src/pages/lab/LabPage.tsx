@@ -8,16 +8,16 @@ import Example from '../exmaple/Example';
 import ComoponentRedux2 from '../exmaple/components/ComoponentRedux2';
 import ComponentRedux1 from '../../components/Redux/ComponentRedux1';
 import { MessageBand } from '../../components/MessageBand';
-import { MessageBandType } from '../../models/message-band.model';
+
 import { useSelector } from 'react-redux';
 import { AppStore } from '../../redux/store';
 import { useDispatch } from 'react-redux';
-import { setMessageBand } from '../../redux/states/message-band.state';
+
 
 export default function LabPage() {
   const [id, setId] = useState("");
   const [data, SetData] = useState([]);
-  const dispatcher = useDispatch();
+  
   const messageBand = useSelector((store : AppStore) => store.messageBand)
   const fetchData = async () => {
     const { data } = await ComunesService(id);
@@ -27,7 +27,7 @@ export default function LabPage() {
 
   useEffect(() => {
     fetchData();
-    dispatcher(setMessageBand({ title: "Error", message: "Error", type: MessageBandType.Error }));
+    
   }, []);
 
   return (
