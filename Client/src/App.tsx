@@ -1,7 +1,6 @@
 
 import './App.css'
 
-import { MessageBand } from './components/MessageBand';
 import { Provider } from 'react-redux';
 import store from './redux/store';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
@@ -11,12 +10,6 @@ import NotFond from './pages/notFound/NotFond';
 import Dashboard from './pages/dashboard/Dashboard';
 
 function App() {
-
-    
-  
-
-
-
   return (
     <>
       <Provider store={store}>

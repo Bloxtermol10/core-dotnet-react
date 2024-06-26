@@ -7,6 +7,8 @@ import Counter from '../../components/Counter/Counter';
 import Example from '../exmaple/Example';
 import ComoponentRedux2 from '../exmaple/components/ComoponentRedux2';
 import ComponentRedux1 from '../../components/Redux/ComponentRedux1';
+import { MessageBand, MessageBandType } from '../../components/MessageBand';
+import Snackbar, { HiddenType, MessageType, PositionType } from '../../components/Snackbar';
 
 export default function LabPage() {
 
@@ -27,7 +29,8 @@ export default function LabPage() {
 
   return (
     <>
-
+    
+      <MessageBand title='Error' message='Este es un error de prueba' type={MessageBandType.Warning}/>
       <div>
         <img src={academicsLogo} className="logo" alt="Academics logo" />
       </div>
