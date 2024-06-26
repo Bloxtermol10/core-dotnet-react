@@ -12,7 +12,7 @@ import Dashboard from './pages/dashboard/Dashboard';
 function App() {
   return (
     <>
-      <Provider store={store}>
+    
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Login />} />
@@ -21,7 +21,7 @@ function App() {
             <Route path="*" element={<NotFond />} />
           </Routes>
         </BrowserRouter>
-      </Provider>
+    
 
     </>
   )

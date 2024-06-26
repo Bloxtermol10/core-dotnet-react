@@ -9,6 +9,6 @@ export function getValidationError(errorCode: any) {{
         ERR_BAD_RESPONSE: "Se rompio la respuesta",
         ERR_BAD_REQUEST: "Se rompio la peticion",
     }
-
+    
     return codeMatcher[errorCode]
 }}
