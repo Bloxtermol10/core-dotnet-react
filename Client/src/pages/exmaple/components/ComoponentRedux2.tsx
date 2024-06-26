@@ -1,10 +1,11 @@
 import { useSelector } from "react-redux"
+import { AppStore } from "../../../redux/store"
 
 
 function ComoponentRedux2() {
 
 
-    const UserState = useSelector((store : any) => store.user)
+    const UserState = useSelector((store : AppStore) => store.user)
     return (
         <div>
             <h3>
