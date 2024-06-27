@@ -1,7 +1,8 @@
 import { Navigate, Route } from "react-router-dom"
 import { PrivateRoutes } from "../../models/routes"
-import LabPage from "./lab/LabPage"
 import RoutesWhitNotFound from "../../utilities/routes-whit-not-found"
+import { lazy } from "react"
+const LabPage = lazy(() => import("./lab/LabPage"))
 
 function Private() {
   return (

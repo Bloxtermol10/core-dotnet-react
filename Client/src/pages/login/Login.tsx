@@ -6,10 +6,11 @@ import { useSelector } from "react-redux"
 import { loginAdapter } from "../../adapters/login.adapter"
 import { Link } from "react-router-dom"
 import { PrivateRoutes } from "../../models/routes"
+import { AppStore } from "../../redux/store"
 
 
 function Login() {
-  const UserState = useSelector((store : any) => store.user)
+  const UserState = useSelector((store : AppStore) => store.user)
   const dispatch = useDispatch()
   const login = async (userName: string, password: string ) => {
     try {
@@ -41,7 +42,7 @@ function Login() {
       <p><b>Name:</b> {UserState.name}</p>
       <p><b>Email:</b> {UserState.role}</p>
 
-      <Link to={PrivateRoutes.LAB}>Laboratorio</Link>
+      <Link to={`/private${PrivateRoutes.LAB}`}>Laboratorio</Link>
     </div>
   )
 }

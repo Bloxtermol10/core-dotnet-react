@@ -5,7 +5,7 @@ import { MessageBandProps } from "../models/message-band.model";
 import { messageBandSlice } from "./states/message-band.state";
 
 export interface AppStore {
-    user: UserInfo
+    user: UserInfo,
     messageBand: MessageBandProps
 }
 

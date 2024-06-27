@@ -29,7 +29,6 @@ const AxiosInterceptor = () => {
 
     const responseInterceptor = axios.interceptors.response.use(
       (response) => {
-        console.log("response", response);
         return response;
       },
       (error) => {
