@@ -1,0 +1,2366 @@
+{
+    "avatar": null,
+    "idEmpresa": 0,
+    "idRol": 0,
+    "nomEmpresa": null,
+    "nomEmpresa2": null,
+    "webSite": "www.agustinianonorte.edu.co",
+    "dominio": "@can.edu.co",
+    "nomUsuario": null,
+    "token": null,
+    "idUsuario": 1,
+    "tipIdentificacion": 1,
+    "esAdmon": 1,
+    "idPregunta": 0,
+    "idPregunta1Retornar": 0,
+    "idPregunta2Retornar": 0,
+    "idPregunta3Retornar": 0,
+    "valorRespuesta1": 0,
+    "valorRespuesta2": 0,
+    "valorRespuesta3": 0,
+    "tipoUsuario": 0,
+    "diligenciaFormulario": 0,
+    "resultadoEnvioRespuestas": 0,
+    "numRespuestasIncorrectas": 0,
+    "numIdentificacion": "12345",
+    "nombre1": "Admon",
+    "nombre2": "",
+    "apellido1": "ITMasters",
+    "apellido2": "",
+    "nombreCompleto": null,
+    "desPregunta": null,
+    "respuesta1": null,
+    "respuesta2": null,
+    "respuesta3": null,
+    "pasword1": null,
+    "pasword2": null,
+    "rol": [
+      {
+        "idRol": 2,
+        "nombre": "SuperAdmon",
+        "tipoUsuario": 0
+      }
+    ],
+    "formulario": [
+      {
+        "idFormulario": 1,
+        "nomFormulario": "1. Administración",
+        "direccion": "default.aspx",
+        "idPadre": null,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2,
+        "nomFormulario": "1.1. Admón tablas básicas",
+        "direccion": "Administracion/DetallePagina.aspx",
+        "idPadre": 1,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 41,
+        "nomFormulario": "1.2. Cambiar clave",
+        "direccion": "seguridad/CambiarClave.aspx",
+        "idPadre": 1,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 43,
+        "nomFormulario": "1.3. Admon Relaciones ",
+        "direccion": "Administracion/Relaciones.aspx",
+        "idPadre": 1,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 46,
+        "nomFormulario": "1.4. Reasignar alumnos",
+        "direccion": "Administracion/ReasignacionCursos.aspx",
+        "idPadre": 1,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 57,
+        "nomFormulario": "1.5. Unificar Docentes",
+        "direccion": "Administracion/UnificarDocente.aspx",
+        "idPadre": 1,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 58,
+        "nomFormulario": "1.6. Asignar Grupos",
+        "direccion": "Administracion/AsignarGrupo.aspx",
+        "idPadre": 1,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 59,
+        "nomFormulario": "1.7. Duplicar Tablas Basicas",
+        "direccion": "Administracion/DuplicarBasicas.aspx",
+        "idPadre": 1,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 139,
+        "nomFormulario": "1.8. Usuarios Padres de familia",
+        "direccion": "Administracion/UsuarioPDF.aspx",
+        "idPadre": 1,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 140,
+        "nomFormulario": "1.9. Actualizacion Web",
+        "direccion": "Administracion/ActualizacionWebAlumno.aspx",
+        "idPadre": 1,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2165,
+        "nomFormulario": "1.10. Reportes seguridad",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes\\Administracion\\opcionesDelSistema.xml",
+        "idPadre": 1,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2231,
+        "nomFormulario": "1.11. Bloqueo Prematrícula",
+        "direccion": "Administracion/BloqueoPrematricula.aspx",
+        "idPadre": 1,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2270,
+        "nomFormulario": "1.12. Admón personas",
+        "direccion": "Administracion/AdministracionPersonas.aspx",
+        "idPadre": 1,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2317,
+        "nomFormulario": "1.13. Asociar revisor documentos",
+        "direccion": "Administracion/AsociarRevisorDocumentos.aspx",
+        "idPadre": 1,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2314,
+        "nomFormulario": "1.14. Publicar documentos",
+        "direccion": "Administracion/PublicarDocumentos.aspx",
+        "idPadre": 1,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 3351,
+        "nomFormulario": "1.15 Configuración General",
+        "direccion": "Administracion/Configuracion.aspx",
+        "idPadre": 1,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 3359,
+        "nomFormulario": "1.15 Configuración General",
+        "direccion": "Administracion/Configuracion.aspx",
+        "idPadre": 1,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 33,
+        "nomFormulario": "Admón Tablas Básicas - Emergente",
+        "direccion": "Administracion/DetalleRegistro.aspx",
+        "idPadre": 1,
+        "visible": false,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 133,
+        "nomFormulario": "Agenda Agregar Reunion - Emergente",
+        "direccion": "Agenda/AgregarReunion.aspx",
+        "idPadre": 1,
+        "visible": false,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 134,
+        "nomFormulario": "Agenda Registrar Pendiente - Emergente",
+        "direccion": "Agenda/RegistrarPendiente.aspx",
+        "idPadre": 1,
+        "visible": false,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 136,
+        "nomFormulario": "Agenda",
+        "direccion": "Agenda/Agenda.aspx",
+        "idPadre": 1,
+        "visible": false,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 138,
+        "nomFormulario": "Default",
+        "direccion": "Default.aspx",
+        "idPadre": 1,
+        "visible": false,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2294,
+        "nomFormulario": "Admón Persona - Emergente",
+        "direccion": "Administracion/AdmonPersona.aspx",
+        "idPadre": 1,
+        "visible": false,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2321,
+        "nomFormulario": "Generador Direcciones - Emergente",
+        "direccion": "Administracion/GenDirecciones.aspx",
+        "idPadre": 1,
+        "visible": false,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 3,
+        "nomFormulario": "2. Horario Clases",
+        "direccion": "1",
+        "idPadre": null,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 4,
+        "nomFormulario": "2.1. Docentes asignaturas",
+        "direccion": "Horario/AsignaturaProfesor.aspx",
+        "idPadre": 3,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 6,
+        "nomFormulario": "2.2. Crear cursos",
+        "direccion": "Administracion/AdmonCursos.aspx",
+        "idPadre": 3,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 7,
+        "nomFormulario": "2.3. Definir horario por curso",
+        "direccion": "Horario/HorarioCurso.aspx",
+        "idPadre": 3,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2305,
+        "nomFormulario": "2.4. Reporte horario por curso",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes\\Horarios\\Horarios.xml",
+        "idPadre": 3,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 39,
+        "nomFormulario": "Horario Definir horario por curso - Emergente",
+        "direccion": "Horario/HorarioCursoAsociar.aspx",
+        "idPadre": 3,
+        "visible": false,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2297,
+        "nomFormulario": "Horario Asociar Masivo - Emergente",
+        "direccion": "Horario/HorarioCursoAsociarMasivo.aspx",
+        "idPadre": 3,
+        "visible": false,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 8,
+        "nomFormulario": "3. Personal ",
+        "direccion": "1",
+        "idPadre": null,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 9,
+        "nomFormulario": "3.1. Datos básicos personal",
+        "direccion": "Personal/PersonalDatosBasicos.aspx",
+        "idPadre": 8,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 11,
+        "nomFormulario": "3.2. Seguimiento personal",
+        "direccion": "Personal/PersonalSeguimiento.aspx",
+        "idPadre": 8,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2200,
+        "nomFormulario": "3.3 Correspondencia",
+        "direccion": "Personal/Correspondencia.aspx",
+        "idPadre": 8,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2201,
+        "nomFormulario": "3.4 Salida funcionarios",
+        "direccion": "Personal/AutorizarSalidaFuncionarios.aspx",
+        "idPadre": 8,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2202,
+        "nomFormulario": "3.5 Registro Visitantes",
+        "direccion": "Personal/RegistroVisitantes.aspx",
+        "idPadre": 8,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2298,
+        "nomFormulario": "3.6 Asociar Horario Grupo",
+        "direccion": "Personal/admingrupohorario.aspx",
+        "idPadre": 8,
+        "visible": false,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2338,
+        "nomFormulario": "3.7. Registro estado salud funcionario",
+        "direccion": "Personal/RegistroEstadoDeSaludFuncionario.aspx",
+        "idPadre": 8,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2209,
+        "nomFormulario": "Personal Estudios - Emergente",
+        "direccion": "Personal/PersonalEstudios.aspx",
+        "idPadre": 8,
+        "visible": false,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2225,
+        "nomFormulario": "Alumno Hermanos Colegio - Emergente",
+        "direccion": "Alumno/HermanosAlumno.aspx",
+        "idPadre": 8,
+        "visible": false,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2296,
+        "nomFormulario": "Personal Buscar - Emergente",
+        "direccion": "Personal/PersonalBuscar.aspx",
+        "idPadre": 8,
+        "visible": false,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2299,
+        "nomFormulario": "Personal Experiencia- Emergente",
+        "direccion": "Personal/PersonalExperiencia.aspx",
+        "idPadre": 8,
+        "visible": false,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 12,
+        "nomFormulario": "4. Alumnos",
+        "direccion": "1",
+        "idPadre": null,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 14,
+        "nomFormulario": "4.1. Datos básicos alumno",
+        "direccion": "Alumno/AlumnoDatosBasicos.aspx",
+        "idPadre": 12,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 15,
+        "nomFormulario": "4.2. Seguimiento alumnos",
+        "direccion": "Seguimiento/SeguimientoAlumno.aspx",
+        "idPadre": 12,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 16,
+        "nomFormulario": "4.3. Activar Alumnos",
+        "direccion": "Alumno/ActivarAlumno.aspx",
+        "idPadre": 12,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 51,
+        "nomFormulario": "4.4. Ingresar Alumno",
+        "direccion": "Alumno/IngresarAlumnoNuevo.aspx",
+        "idPadre": 12,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2192,
+        "nomFormulario": "4.5. Datos básicos alumno Consulta",
+        "direccion": "Alumno/AlumnoDatosBasicosConsulta.aspx",
+        "idPadre": 12,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2247,
+        "nomFormulario": "4.6. Ficha Médica",
+        "direccion": "Alumno/FichaMedica.aspx",
+        "idPadre": 12,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2319,
+        "nomFormulario": "4.7. Revisión docs matrícula",
+        "direccion": "Alumno/ValidarDocumentosMatricula.aspx",
+        "idPadre": 12,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2345,
+        "nomFormulario": "4.8. Visor de Documentos",
+        "direccion": "Alumno/VisorDocumentos.aspx",
+        "idPadre": 12,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 3345,
+        "nomFormulario": "4.9. Documentos de Matrícula",
+        "direccion": "Reportes/VisorReporteDos.aspx?Reportes=Reportes\\Secretaria\\DocsMatricula.xml",
+        "idPadre": 12,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 3357,
+        "nomFormulario": "4.10 Consulta por Estudiante",
+        "direccion": "Alumno/ConsultaporEstudiante.aspx",
+        "idPadre": 12,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 112,
+        "nomFormulario": "Alumno Colegios - Emergente",
+        "direccion": "Alumno/ColegiosAlumno.aspx",
+        "idPadre": 12,
+        "visible": false,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2295,
+        "nomFormulario": "Alumno Persona Buscar - Emergente",
+        "direccion": "Alumno/PersonaBuscar.aspx",
+        "idPadre": 12,
+        "visible": false,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2302,
+        "nomFormulario": "Alumno Persona Datos Basicos - emergente",
+        "direccion": "Alumno/PersonaDatosBasicos.aspx",
+        "idPadre": 12,
+        "visible": false,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 17,
+        "nomFormulario": "5. Valoraciones",
+        "direccion": "1",
+        "idPadre": null,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 111,
+        "nomFormulario": "5.3. Definir Desempenios",
+        "direccion": "Logros/AdmonDesempenios.aspx",
+        "idPadre": 17,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 20,
+        "nomFormulario": "5.4. Asociar observaciones (Criterios)",
+        "direccion": "Valoracion/ValoracionAlumno.aspx",
+        "idPadre": 17,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 42,
+        "nomFormulario": "5.5. Valoración masiva",
+        "direccion": "Valoracion/ValoracionBasicaAlumno.aspx",
+        "idPadre": 17,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 52,
+        "nomFormulario": "5.6. Valoración por desempeños",
+        "direccion": "Valoracion/ValoracionBasicaDesempenioAlumno.aspx",
+        "idPadre": 17,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 54,
+        "nomFormulario": "5.7. Valoración por grupos",
+        "direccion": "Valoracion/ValoracionGrupo.aspx",
+        "idPadre": 17,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 72,
+        "nomFormulario": "5.8. Planilla de Notas",
+        "direccion": "Valoracion/PlanillaNotas.aspx",
+        "idPadre": 17,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2309,
+        "nomFormulario": "5.8. Planilla de Notas Cualitativa",
+        "direccion": "Valoracion/PlanillaNotasCualitativa.aspx",
+        "idPadre": 17,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 21,
+        "nomFormulario": "5.9. Novedades de valoración",
+        "direccion": "Valoracion/NovedadAlumno.aspx",
+        "idPadre": 17,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2310,
+        "nomFormulario": "5.9. Novedades de valoración Cualitativa",
+        "direccion": "Valoracion/NovedadAlumnoCualitativa.aspx",
+        "idPadre": 17,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2311,
+        "nomFormulario": "5.9. Novedades Profesor Cualitativa",
+        "direccion": "Valoracion/NovedadAlumnoProfesoresCualitativa.aspx",
+        "idPadre": 17,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2255,
+        "nomFormulario": "5.10. Reversar Novedades",
+        "direccion": "Valoracion/newNovedadAlumno.aspx",
+        "idPadre": 17,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2307,
+        "nomFormulario": "5.14. Novedades de Año",
+        "direccion": "Valoracion/NovedadAlumnoAnio.aspx",
+        "idPadre": 17,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 143,
+        "nomFormulario": "5.15. Tareas",
+        "direccion": "Seguimiento/Tareas.aspx",
+        "idPadre": 17,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 1144,
+        "nomFormulario": "5.16. Planilla Notas OAR",
+        "direccion": "Valoracion/PlanillaNotasOAR.aspx",
+        "idPadre": 17,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 1154,
+        "nomFormulario": "5.17. Informe mitad de periodo",
+        "direccion": "Valoracion/ValoracionCorte.aspx",
+        "idPadre": 17,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2170,
+        "nomFormulario": "5.18. Novedades de valoración - Profesores",
+        "direccion": "Valoracion/NovedadAlumnoProfesores.aspx",
+        "idPadre": 17,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2248,
+        "nomFormulario": "5.19. Valoracion Cualitativa",
+        "direccion": "Valoracion/ValoracionCulitativa.aspx",
+        "idPadre": 17,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 25,
+        "nomFormulario": "6. Cierres",
+        "direccion": "1",
+        "idPadre": null,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 26,
+        "nomFormulario": "6.1. Asociar asignaturas",
+        "direccion": "Cierres/AsignaturasAlumno.aspx",
+        "idPadre": 25,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 29,
+        "nomFormulario": "6.2. Cierre periodo",
+        "direccion": "Cierres/CierrePeriodo.aspx",
+        "idPadre": 25,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 48,
+        "nomFormulario": "6.3. Promoción Alumnos",
+        "direccion": "Cierres/Promocion.aspx",
+        "idPadre": 25,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 113,
+        "nomFormulario": "6.4. Promoción Anticipada",
+        "direccion": "Cierres/PromocionAnticipada.aspx",
+        "idPadre": 25,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 114,
+        "nomFormulario": "6.5. Reversar Promocion",
+        "direccion": "Cierres/ReversarPromocion.aspx",
+        "idPadre": 25,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2203,
+        "nomFormulario": "6.6. Iniciar Año",
+        "direccion": "Cierres/CierreIniciarAnio.aspx",
+        "idPadre": 25,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2230,
+        "nomFormulario": "6.7. Asociar asignaturas por grado",
+        "direccion": "Cierres/AsignaturasGrado.aspx",
+        "idPadre": 25,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2304,
+        "nomFormulario": "6.8 Iniciar Año Individual",
+        "direccion": "Cierres/IniciarAnioIndividual.aspx",
+        "idPadre": 25,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2306,
+        "nomFormulario": "6.9. Foliar libro final",
+        "direccion": "Cierres/AnioFoliar.aspx",
+        "idPadre": 25,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 30,
+        "nomFormulario": "7. Reportes",
+        "direccion": "1",
+        "idPadre": null,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 31,
+        "nomFormulario": "7.1. Secretaría",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes\\Basicos\\Basicos.xml",
+        "idPadre": 30,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 32,
+        "nomFormulario": "7.2. Listas de clase",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes\\ListasClase\\ListadoClase.xml",
+        "idPadre": 30,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 55,
+        "nomFormulario": "7.3. Listas de clase por profesor",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes\\ListasClaseProfesor\\ListadosClasePorProfesor.xml",
+        "idPadre": 30,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2268,
+        "nomFormulario": "7.4. Planillas de notas",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes\\PlanillasListasClase\\PlanillasListasClase.xml",
+        "idPadre": 30,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2280,
+        "nomFormulario": "7.5. Consolidado de notas",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes\\NotasConsolidado\\ConsolidadoNotas.xml",
+        "idPadre": 30,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 53,
+        "nomFormulario": "7.6. Sábana de notas",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes\\NotasSabana\\SabanaNotas.xml",
+        "idPadre": 30,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2269,
+        "nomFormulario": "7.7. Boletines 2018 -->",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes\\Boletines\\Boletines.xml",
+        "idPadre": 30,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2267,
+        "nomFormulario": "7.8. Certificados de notas",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes\\Certificados\\Certificados.xml",
+        "idPadre": 30,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 116,
+        "nomFormulario": "7.9. Acc. de mejoramiento",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes\\Recuperaciones\\Recuperaciones.xml",
+        "idPadre": 30,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2258,
+        "nomFormulario": "7.10. Acc. de mejoramiento área",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes\\Recuperaciones\\RecuperacionesArea.xml",
+        "idPadre": 30,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 124,
+        "nomFormulario": "7.11. Planeación Académica",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes\\Planeacion\\Planeacion.xml",
+        "idPadre": 30,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 45,
+        "nomFormulario": "7.12. Boletines anteriores <-- 2018",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes\\NotasBoletin\\NotasConsolidado.xml",
+        "idPadre": 30,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 49,
+        "nomFormulario": "7.13. Básicos alumnos",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes\\Alumnos\\Alumnos.xml",
+        "idPadre": 30,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2284,
+        "nomFormulario": "7.14. Hoja de matrícula",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes\\HojaMatricula\\HojaMatricula.xml",
+        "idPadre": 30,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 56,
+        "nomFormulario": "7.15. Estadísticas",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes\\Estadisticas\\Estadisticas.xml",
+        "idPadre": 30,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 125,
+        "nomFormulario": "7.16. Estadisticas por profesor",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes\\EstadisticasProfesor\\EstadisticoNotasporProfesor.xml",
+        "idPadre": 30,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2216,
+        "nomFormulario": "7.17. Estadisticas Colegio",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes\\EstadisticasColegio\\EstadisticasColegio.xml",
+        "idPadre": 30,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2264,
+        "nomFormulario": "7.18. Estadisticas Colegio Area",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes/EstadisticasColegioArea/PorcentajeValoracionArea.xml",
+        "idPadre": 30,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2164,
+        "nomFormulario": "7.19. Seguimiento alumnos",
+        "direccion": "Reportes/VisorReporteDos.aspx?Reportes=Reportes\\Alumnos\\AlumnosSeguimiento.xml",
+        "idPadre": 30,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2167,
+        "nomFormulario": "7.20. Proceso formativo",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes\\ProcesoFormativo\\ProcesoFormacion.xml",
+        "idPadre": 30,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2213,
+        "nomFormulario": "7.21. Inasistencias por fechas",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes\\ProcesoFormativo\\Inasistencias.xml",
+        "idPadre": 30,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2273,
+        "nomFormulario": "7.22. Inasistencias por día",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes\\ProcesoFormativo\\InasistenciasDia.xml",
+        "idPadre": 30,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 132,
+        "nomFormulario": "7.23. Informes DANE",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes\\Secretaria\\ReporteDane.xml",
+        "idPadre": 30,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2212,
+        "nomFormulario": "7.24. Registro de tareas",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes\\Tareas\\TareasRegistradas.xml",
+        "idPadre": 30,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2211,
+        "nomFormulario": "7.25. Carga académica profesores",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes\\Personal\\CargaAcademicaProfesor.xml",
+        "idPadre": 30,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2214,
+        "nomFormulario": "7.26. Personal acta posesión",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes\\Personal\\ActaDePosesion.xml",
+        "idPadre": 30,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 123,
+        "nomFormulario": "7.27. Reportes personal",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes\\Personal\\BasicosPersonal.xml",
+        "idPadre": 30,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2163,
+        "nomFormulario": "7.28. Seguimiento personal",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes\\Personal\\PersonalSeguimiento.xml",
+        "idPadre": 30,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2220,
+        "nomFormulario": "7.29. Personal hoja de vida",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes/Personal/HojaVidaPersonal.xml",
+        "idPadre": 30,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2224,
+        "nomFormulario": "7.30. Personal foto",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes/Personal/FotoPersonal.xml",
+        "idPadre": 30,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2223,
+        "nomFormulario": "7.31. Alumnos inactivos",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes/Alumnos/AlumnosInactivos.xml",
+        "idPadre": 30,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2232,
+        "nomFormulario": "7.32. Prematrículas registradas",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes\\Secretaria\\ListadosAlumnosPrematricula.xml",
+        "idPadre": 30,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2234,
+        "nomFormulario": "7.33. Resultado Evaluacion desempeño",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes/DesempenioPersonal\\ResultadoDesempenioPersonal.xml",
+        "idPadre": 30,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2186,
+        "nomFormulario": "7.34. Reporte Evaluación Desempeño",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes/DesempenioPersonal\\EvaluacionDesempenioPersonal.xml",
+        "idPadre": 30,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2222,
+        "nomFormulario": "7.35. Recurso estadistica",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes/Recursos/RecursoEstadistica.xml",
+        "idPadre": 30,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2215,
+        "nomFormulario": "7.36. Constancias",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=\\Reportes\\Secretaria\\Constancias.xml",
+        "idPadre": 30,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 131,
+        "nomFormulario": "7.37. Rutas",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes\\Rutas\\Rutas.xml",
+        "idPadre": 30,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2210,
+        "nomFormulario": "7.38. Recepción",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes\\Recepcion\\Recepcion.xml",
+        "idPadre": 30,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 50,
+        "nomFormulario": "7.39. Lista clase optativas por grado",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes\\Secretaria\\ListadosAlumnosGrado.xml",
+        "idPadre": 30,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2182,
+        "nomFormulario": "7.39. Encuestas",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes\\Encuestas\\Encuestas.xml",
+        "idPadre": 30,
+        "visible": false,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2281,
+        "nomFormulario": "7.40. Consultas docentes",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes\\ConsultasDocentes\\ConsultasDocentes.xml",
+        "idPadre": 30,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2252,
+        "nomFormulario": "7.41. Proyectos pedagógicos",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes\\Proyectos\\proyectos.xml",
+        "idPadre": 30,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 3349,
+        "nomFormulario": "7.42. Consultas profesores",
+        "direccion": "Reportes/VisorReporteDos.aspx?Reportes=Reportes\\ConsultasDocenteUsuario\\ConsultasDocenteUsuario.xml",
+        "idPadre": 30,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2190,
+        "nomFormulario": "7.51. Certificados Col. Web.",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes\\CertificadosColWeb\\CertificadosColWeb.xml",
+        "idPadre": 30,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2316,
+        "nomFormulario": "7.55. Documentación proceso matrículas",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes/Aspirantes/DocumentosMatricula.xml",
+        "idPadre": 30,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 60,
+        "nomFormulario": "8. Pagaduria",
+        "direccion": "1",
+        "idPadre": null,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 61,
+        "nomFormulario": "8.1. Asociar Pagos",
+        "direccion": "Pagaduria/pagAsociarPagosMes.aspx",
+        "idPadre": 60,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 62,
+        "nomFormulario": "8.2.1 Generar Recibos",
+        "direccion": "Pagaduria/pagImprimirRecibos.aspx",
+        "idPadre": 60,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2282,
+        "nomFormulario": "8.2 Recibos de Pago",
+        "direccion": "Pagaduria/pagImprimirRecibosMes.aspx",
+        "idPadre": 60,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 63,
+        "nomFormulario": "8.3 Cargue Masivo Dptos",
+        "direccion": "Pagaduria/pagCargueMasivoDepositos.aspx",
+        "idPadre": 60,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 64,
+        "nomFormulario": "8.4 Conciliacion Automatica",
+        "direccion": "Pagaduria/pagConciliacionAutomatica.aspx",
+        "idPadre": 60,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 68,
+        "nomFormulario": "8.5 Conciliacion Manual",
+        "direccion": "Pagaduria/pagConciliacionManual.aspx",
+        "idPadre": 60,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 70,
+        "nomFormulario": "8.6 Cargue Manual Dptos",
+        "direccion": "Pagaduria/pagIngresoManualDepositos.aspx",
+        "idPadre": 60,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 73,
+        "nomFormulario": "8.7 Reversar Conciliacion",
+        "direccion": "Pagaduria/pagReversionConciliacion.aspx",
+        "idPadre": 60,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 74,
+        "nomFormulario": "8.8 Anular Depositos",
+        "direccion": "Pagaduria/pagCancelarDeposito.aspx",
+        "idPadre": 60,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 115,
+        "nomFormulario": "8.9 Definir Pagos",
+        "direccion": "Pagaduria/pagDefinirConceptosPagos.aspx",
+        "idPadre": 60,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 117,
+        "nomFormulario": "8.10 Definir meses",
+        "direccion": "Pagaduria/pagAdmonMeses.aspx",
+        "idPadre": 60,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 141,
+        "nomFormulario": "8.11 Otros Ingresos",
+        "direccion": "Pagaduria/pagOtrosIngresos.aspx",
+        "idPadre": 60,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 142,
+        "nomFormulario": "8.12 Cierre pagaduria",
+        "direccion": "Pagaduria/pagCierrePagaduria.aspx",
+        "idPadre": 60,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2155,
+        "nomFormulario": "8.12 Cierre pagaduria",
+        "direccion": "Pagaduria/pagCierrePagaduria.aspx",
+        "idPadre": 60,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2181,
+        "nomFormulario": "8.13 Recibos Parciales",
+        "direccion": "Pagaduria/pagImprimirRecibosparciales.aspx",
+        "idPadre": 60,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2261,
+        "nomFormulario": "8.14 Devoluciones",
+        "direccion": "Pagaduria/pagDevoluciones.aspx",
+        "idPadre": 60,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2275,
+        "nomFormulario": "8.15 Inactivar Facturacion ",
+        "direccion": "Pagaduria/pagInactivarFacturacion.aspx",
+        "idPadre": 60,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2308,
+        "nomFormulario": "8.16. Generar Facturacion",
+        "direccion": "Pagaduria/pagGenFacturacion.aspx",
+        "idPadre": 60,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2322,
+        "nomFormulario": "8.17. Subir Terceros Fact Electronica",
+        "direccion": "Pagaduria/pagCargueMasivoTercero.aspx",
+        "idPadre": 60,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2274,
+        "nomFormulario": "8.18. Dividir Deposito",
+        "direccion": "Pagaduria/pagDividirDeposito.aspx",
+        "idPadre": 60,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2341,
+        "nomFormulario": "8.19. Activar/Inactiva botón PSE",
+        "direccion": "Reportes/VisorReporteDos.aspx?Reportes=Reportes\\Pagaduria\\ActivarInactivarPSE.xml",
+        "idPadre": 60,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 1145,
+        "nomFormulario": "Pagadurìa Terceros Datos Basicos - Emergente",
+        "direccion": "Pagaduria/TerceroDatosBasicos.aspx",
+        "idPadre": 60,
+        "visible": false,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 66,
+        "nomFormulario": "9. Reportes Pagaduria",
+        "direccion": "1",
+        "idPadre": null,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 67,
+        "nomFormulario": "9.1 Facturación",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes\\Pagaduria\\Pagaduria.xml",
+        "idPadre": 66,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 75,
+        "nomFormulario": "9.2 Carta de Cobro",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes\\Pagaduria\\CartaCobro.xml",
+        "idPadre": 66,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2283,
+        "nomFormulario": "9.2 Paz y salvo",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes\\Pagaduria\\PazySalvo.xml",
+        "idPadre": 66,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 109,
+        "nomFormulario": "9.3 Depósitos por estado",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes\\Pagaduria\\DepositosEstado.xml",
+        "idPadre": 66,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 110,
+        "nomFormulario": "9.4 Estado cuenta alumnos",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes\\Pagaduria\\EstadoCuentaAlumno.xml",
+        "idPadre": 66,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2206,
+        "nomFormulario": "9.5  Reportes Generales",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes\\Pagaduria\\GeneralesPagaduria.xml",
+        "idPadre": 66,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2168,
+        "nomFormulario": "9.7. Facturación por Concepto",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes\\Pagaduria\\PagaduriaConcepto.xml",
+        "idPadre": 66,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2169,
+        "nomFormulario": "9.8. Cierre de Pagaduría",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes\\Pagaduria\\CierrePagaduria.xml",
+        "idPadre": 66,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2194,
+        "nomFormulario": "9.9. Cartera por concepto",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes\\Pagaduria\\CarteraPorConcepto.xml",
+        "idPadre": 66,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2204,
+        "nomFormulario": "9.10. Ingresos por tipo de pago",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes\\Pagaduria\\IngresosPorTipoPago.xml",
+        "idPadre": 66,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2205,
+        "nomFormulario": "9.11. Certificados de Ingresos",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes\\Pagaduria\\CertificadoDeclaracion.xml",
+        "idPadre": 66,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 3347,
+        "nomFormulario": "9.12. Reportes Fact Electronica",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes\\Pagaduria\\rptFactElectronica.xml",
+        "idPadre": 66,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 76,
+        "nomFormulario": "10. Aspirantes",
+        "direccion": "1",
+        "idPadre": null,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 78,
+        "nomFormulario": "10.1 Parámetros año",
+        "direccion": "Aspirantes/ParametrosAnualesAspirante.aspx",
+        "idPadre": 76,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 77,
+        "nomFormulario": "10.2 Inscripción",
+        "direccion": "Aspirantes/VentaFormulario.aspx",
+        "idPadre": 76,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 79,
+        "nomFormulario": "10.3 Proceso de selección",
+        "direccion": "Aspirantes/ProcesoSeleccion.aspx",
+        "idPadre": 76,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 80,
+        "nomFormulario": "10.4 MatricularAspirantes",
+        "direccion": "Aspirantes/MatricularAspirante.aspx",
+        "idPadre": 76,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 81,
+        "nomFormulario": "10.5 Reportes Aspirantes",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes\\Aspirantes\\Aspirantes.xml",
+        "idPadre": 76,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2191,
+        "nomFormulario": "10.6 Formulario Aspirante",
+        "direccion": "Aspirantes/FormularioAspirante.aspx",
+        "idPadre": 76,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2228,
+        "nomFormulario": "10.7. Grupos",
+        "direccion": "Aspirantes/GruposAdmision.aspx",
+        "idPadre": 76,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2227,
+        "nomFormulario": "10.8. Reporte Grupos Aspirantes",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes\\Aspirantes\\AspirantesGrupos.xml",
+        "idPadre": 76,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2229,
+        "nomFormulario": "10.9. Formulario",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes\\Aspirantes\\Formulario.xml",
+        "idPadre": 76,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 82,
+        "nomFormulario": "11. Planeación",
+        "direccion": "1",
+        "idPadre": null,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 83,
+        "nomFormulario": "11.1. Planeacion General",
+        "direccion": "PlnAcademica/planGeneral.aspx",
+        "idPadre": 82,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 86,
+        "nomFormulario": "11.2. Aprobar Plan General",
+        "direccion": "PlnAcademica/AprobarPlanGeneral.aspx",
+        "idPadre": 82,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 87,
+        "nomFormulario": "11.3. Planeación Periodica",
+        "direccion": "PlnAcademica/planPeriodico.aspx",
+        "idPadre": 82,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 89,
+        "nomFormulario": "11.4. Aprobar Plan Periodico",
+        "direccion": "PlnAcademica/AprobarPlanPeriodico.aspx",
+        "idPadre": 82,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 90,
+        "nomFormulario": "11.5. Seguimiento Plan Periodico",
+        "direccion": "PlnAcademica/SeguimientoPlanPeriodico.aspx",
+        "idPadre": 82,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 18,
+        "nomFormulario": "11.6. Definir aprendizajes (Logros)",
+        "direccion": "Logros/AdmonLogros.aspx",
+        "idPadre": 82,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 19,
+        "nomFormulario": "11.7. Definir observaciones (Criterios)",
+        "direccion": "Logros/AdmonCriterios.aspx",
+        "idPadre": 82,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 23,
+        "nomFormulario": "11.8. Aprobar aprendizajes (Logros)",
+        "direccion": "Logros/AdmonLogrosAprobar.aspx",
+        "idPadre": 82,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 24,
+        "nomFormulario": "11.9. Aprobar observaciones (Criterios)",
+        "direccion": "Logros/AdmonCriteriosAprobar.aspx",
+        "idPadre": 82,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2263,
+        "nomFormulario": "11.10. Aprobar observaciones masivo (Criterios)",
+        "direccion": "Logros/AdmonCriterioAprobarMasivo.aspx",
+        "idPadre": 82,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2251,
+        "nomFormulario": "11.11. Visor de planeaciones",
+        "direccion": "PlnAcademica/VisorPlaneacion.aspx",
+        "idPadre": 82,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2257,
+        "nomFormulario": "11.12. Reasignación planeación",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=PlnAcademica\\ReasignarPlaneacion.xml",
+        "idPadre": 82,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 34,
+        "nomFormulario": "Planeaciòn Logros o estandares - Emergente",
+        "direccion": "Logros/CrudLogro.aspx",
+        "idPadre": 82,
+        "visible": false,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 35,
+        "nomFormulario": "Planeaciòn Logros o estandares aprobar - Emergente",
+        "direccion": "Logros/CrudLogroAprobar.aspx",
+        "idPadre": 82,
+        "visible": false,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 36,
+        "nomFormulario": "Planeaciòn Criterios de evaluacion - Emergente",
+        "direccion": "Logros/CrudCriterio.aspx",
+        "idPadre": 82,
+        "visible": false,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 37,
+        "nomFormulario": "Planeaciòn Criterios de evaluacion aprobar - Emergente",
+        "direccion": "Logros/CrudCriterioAprobar.aspx",
+        "idPadre": 82,
+        "visible": false,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 106,
+        "nomFormulario": "Planeaciòn Agregar Objetivo Gral - Emergente",
+        "direccion": "PlnAcademica/AgregarObjetivoGral.aspx",
+        "idPadre": 82,
+        "visible": false,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 107,
+        "nomFormulario": "Planeaciòn Agregar Contenido - Emergente",
+        "direccion": "PlnAcademica/AgregarContenido.aspx",
+        "idPadre": 82,
+        "visible": false,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 108,
+        "nomFormulario": "Planeaciòn Agregar Actividad - Emergente",
+        "direccion": "PlnAcademica/AgregarActividad.aspx",
+        "idPadre": 82,
+        "visible": false,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 118,
+        "nomFormulario": "12. Padres de Flia",
+        "direccion": "1",
+        "idPadre": null,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2254,
+        "nomFormulario": "12.1. Procesos alumno",
+        "direccion": "ConsultasExternos/newProcesosAlumno.aspx",
+        "idPadre": 118,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 120,
+        "nomFormulario": "12.2. Actualizacion de datos",
+        "direccion": "ConsultasExternos/AlumnoDatosBasicosActualizacionPDF.aspx",
+        "idPadre": 118,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 121,
+        "nomFormulario": "12.3. Observador",
+        "direccion": "ConsultasExternos/ObservadorAlumno.aspx",
+        "idPadre": 118,
+        "visible": false,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2233,
+        "nomFormulario": "12.3. Documentos matrícula",
+        "direccion": "ConsultasExternos/DocumentosMatricula.aspx",
+        "idPadre": 118,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2266,
+        "nomFormulario": "12.4. Ficha médica",
+        "direccion": "Alumno/FichaMedica.aspx",
+        "idPadre": 118,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2312,
+        "nomFormulario": "12.5. Informe académico",
+        "direccion": "ConsultasExternos/Boletin.aspx",
+        "idPadre": 118,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2315,
+        "nomFormulario": "12.6. Consultar circulares",
+        "direccion": "ConsultasExternos/ConsultarDocumentos.aspx",
+        "idPadre": 118,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2326,
+        "nomFormulario": "12.7. Registro estado de salud",
+        "direccion": "ConsultasExternos/RegistroEstadoDeSaludEstudiante.aspx",
+        "idPadre": 118,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 122,
+        "nomFormulario": "Externos Detalle novedad - Emergente",
+        "direccion": "ConsultasExternos/DetalleNovedad.aspx",
+        "idPadre": 118,
+        "visible": false,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 3346,
+        "nomFormulario": "ImprimirReportes - Emergente",
+        "direccion": "ConsultasExternos/ImprimeReportes.aspx",
+        "idPadre": 118,
+        "visible": false,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 126,
+        "nomFormulario": "13. Rutas",
+        "direccion": "1",
+        "idPadre": null,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 127,
+        "nomFormulario": "13.1. Personas",
+        "direccion": "Rutas/IngresarPersona.aspx",
+        "idPadre": 126,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 128,
+        "nomFormulario": "13.2. Administración de Rutas",
+        "direccion": "Rutas/AdmonRutas.aspx",
+        "idPadre": 126,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 129,
+        "nomFormulario": "13.3. Ruta Alumno",
+        "direccion": "Rutas/AlumnoRuta.aspx",
+        "idPadre": 126,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 130,
+        "nomFormulario": "13.4. Novedad Ruta",
+        "direccion": "Rutas/NovedadRuta.aspx",
+        "idPadre": 126,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 1146,
+        "nomFormulario": "14. Biblioteca",
+        "direccion": "1",
+        "idPadre": null,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 1147,
+        "nomFormulario": "14.1 Administración",
+        "direccion": "Biblioteca/AdmonBiblioteca.aspx",
+        "idPadre": 1146,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 1148,
+        "nomFormulario": "14.2 Registro de Estudiantes",
+        "direccion": "Biblioteca/RegistrarEstudiantes.aspx",
+        "idPadre": 1146,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 1149,
+        "nomFormulario": "14.3 Registro de Funcionarios",
+        "direccion": "Biblioteca/RegistrarFuncionarios.aspx",
+        "idPadre": 1146,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2193,
+        "nomFormulario": "14.4 Consulta de libros",
+        "direccion": "Biblioteca/ConsultaLibrosBiblioteca.aspx",
+        "idPadre": 1146,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2253,
+        "nomFormulario": "14.5 Devolucion Libro",
+        "direccion": "Biblioteca/DevolucionLibro.aspx",
+        "idPadre": 1146,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 1151,
+        "nomFormulario": "15. Reportes Biblioteca",
+        "direccion": "1",
+        "idPadre": null,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 1150,
+        "nomFormulario": "15.1 Libros con parámetros",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes/Biblioteca/ReporteLibro.xml",
+        "idPadre": 1151,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 1152,
+        "nomFormulario": "15.2 Total de Registros",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes/Biblioteca/ReporteTotalLibro.xml",
+        "idPadre": 1151,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 1153,
+        "nomFormulario": "15.3 Préstamos y Sanciones",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes/Biblioteca/ReportePrestamos.xml",
+        "idPadre": 1151,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2160,
+        "nomFormulario": "16. Observador",
+        "direccion": "1",
+        "idPadre": null,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2156,
+        "nomFormulario": "16.1 Registro inasistencias",
+        "direccion": "ProcesoFormativo/NovedadesAsistencias.aspx",
+        "idPadre": 2160,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2157,
+        "nomFormulario": "16.2 Validar Proceso Formativo",
+        "direccion": "ProcesoFormativo/ValidarNovedadAsistencia.aspx",
+        "idPadre": 2160,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2158,
+        "nomFormulario": "16.3 Registrar Retardo en Ingreso",
+        "direccion": "ProcesoFormativo/RegistrarRetardo.aspx",
+        "idPadre": 2160,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2159,
+        "nomFormulario": "16.4 Autorizar Estudiantes",
+        "direccion": "ProcesoFormativo/AutorizarSalidaEstudiante.aspx",
+        "idPadre": 2160,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2161,
+        "nomFormulario": "16.5 Confirmar Salida Autorizada",
+        "direccion": "ProcesoFormativo/ValidarSalidaAutorizada.aspx",
+        "idPadre": 2160,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2162,
+        "nomFormulario": "16.6 Atención Médica Estudiante",
+        "direccion": "ProcesoFormativo/AtencionMedicaAlumno.aspx",
+        "idPadre": 2160,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2166,
+        "nomFormulario": "16.7 Consolidado por Periodo",
+        "direccion": "ProcesoFormativo/ConsolidadoNovedadPeriodo.aspx",
+        "idPadre": 2160,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2250,
+        "nomFormulario": "16.8. Registro Masivo Inasistencias",
+        "direccion": "ProcesoFormativo/RegistroMasivoInasistencia.aspx",
+        "idPadre": 2160,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2343,
+        "nomFormulario": "16.9. Cálculo Conviviencia",
+        "direccion": "ProcesoFormativo/calculoConviviencia.aspx",
+        "idPadre": 2160,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2344,
+        "nomFormulario": "16.10. Justificación Masivo Inasistencias",
+        "direccion": "ProcesoFormativo/ValidarNovedadAsistenciaMasivo.aspx",
+        "idPadre": 2160,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2171,
+        "nomFormulario": "17. Encuestas",
+        "direccion": "1",
+        "idPadre": null,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2236,
+        "nomFormulario": "17.1. Encuesta",
+        "direccion": "EncuestaNew/EncuestaNew.aspx",
+        "idPadre": 2171,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2235,
+        "nomFormulario": "17.2 Grupos ",
+        "direccion": "EncuestaNew/GrupoEncuesta.aspx",
+        "idPadre": 2171,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2237,
+        "nomFormulario": "17.3. Admon Encuesta",
+        "direccion": "EncuestaNew/PreguntasEncuestaNew.aspx",
+        "idPadre": 2171,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2238,
+        "nomFormulario": "17.4. Asociar Encuesta Personal",
+        "direccion": "EncuestaNew/UsuarioEncuestaNew.aspx",
+        "idPadre": 2171,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2239,
+        "nomFormulario": "17.5. Asociar Encuesta Alumno",
+        "direccion": "EncuestaNew/AlumnoEncuestaNew.aspx",
+        "idPadre": 2171,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2240,
+        "nomFormulario": "17.6. Calificar Encuesta",
+        "direccion": "EncuestaNew/ResultadoEncuestaNew.aspx",
+        "idPadre": 2171,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2241,
+        "nomFormulario": "17.7. Reportes Encuesta",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes\\EncuestasNew\\Encuestas.xml",
+        "idPadre": 2171,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2242,
+        "nomFormulario": "Encuestas Respuestas Pregunta - Emergente",
+        "direccion": "EncuestaNew/PreguntaRespuestaEncuestaNew.aspx",
+        "idPadre": 2171,
+        "visible": false,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2173,
+        "nomFormulario": "18. Desempeño Personal",
+        "direccion": "1",
+        "idPadre": null,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2285,
+        "nomFormulario": "18.1 Parametrizar Funcionarios",
+        "direccion": "DesempenioPersonal/AsociaRol.aspx",
+        "idPadre": 2173,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2286,
+        "nomFormulario": "18.2 Admon division",
+        "direccion": "DesempenioPersonal/AdmonDivision.aspx",
+        "idPadre": 2173,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2287,
+        "nomFormulario": "18.3 Admon Bloque y preguntas",
+        "direccion": "DesempenioPersonal/BloqueEditar.aspx",
+        "idPadre": 2173,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2289,
+        "nomFormulario": "18.4 Admon evaluación",
+        "direccion": "DesempenioPersonal/AdmonEncuesta.aspx",
+        "idPadre": 2173,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2290,
+        "nomFormulario": "18.5 Asociar evaluacion a estudiantes",
+        "direccion": "DesempenioPersonal/AsociarEncuestaEstudiante.aspx",
+        "idPadre": 2173,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2291,
+        "nomFormulario": "18.6 Evaluación desempeño",
+        "direccion": "DesempenioPersonal/EvaluacionDesempenio.aspx",
+        "idPadre": 2173,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2292,
+        "nomFormulario": "18.7 Resultado de evaluación",
+        "direccion": "DesempenioPersonal/ResultadoEvaluacion.aspx",
+        "idPadre": 2173,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2177,
+        "nomFormulario": "Desempenio Personal Bloque - Emergente",
+        "direccion": "DesempenioPersonal/PopBloque.aspx",
+        "idPadre": 2173,
+        "visible": false,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2178,
+        "nomFormulario": "Desempenio Personal Division - Emergente",
+        "direccion": "DesempenioPersonal/PopDivision.aspx",
+        "idPadre": 2173,
+        "visible": false,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2179,
+        "nomFormulario": "Desempenio Personal Pregunta  - Emergente",
+        "direccion": "DesempenioPersonal/PopPregunta.aspx",
+        "idPadre": 2173,
+        "visible": false,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2180,
+        "nomFormulario": "Desempenio Personal Encuesta - Emergente",
+        "direccion": "DesempenioPersonal/PopEncuesta.aspx",
+        "idPadre": 2173,
+        "visible": false,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2196,
+        "nomFormulario": "19. Sistema Gestión de Calidad",
+        "direccion": "1",
+        "idPadre": null,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2197,
+        "nomFormulario": "19.1 Administraccion",
+        "direccion": "SistemaGestionCalidad/SGCAdmon.aspx",
+        "idPadre": 2196,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2199,
+        "nomFormulario": "19.2 SGC",
+        "direccion": "SistemaGestionCalidad/SGC.aspx",
+        "idPadre": 2196,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2217,
+        "nomFormulario": "20. Recursos",
+        "direccion": "1",
+        "idPadre": null,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2218,
+        "nomFormulario": "20.1. Reservar Recurso",
+        "direccion": "Recursos/ReservarRecurso.aspx",
+        "idPadre": 2217,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2219,
+        "nomFormulario": "20.2 Consultar Reservas",
+        "direccion": "Recursos/ConsultarReservas.aspx",
+        "idPadre": 2217,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2243,
+        "nomFormulario": "21. Proyectos",
+        "direccion": "1",
+        "idPadre": null,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2244,
+        "nomFormulario": "21.1 Pedagógico",
+        "direccion": "Proyectos/Pedagogico.aspx?TP=PG",
+        "idPadre": 2243,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2245,
+        "nomFormulario": "21.2 Transversal",
+        "direccion": "Proyectos/Pedagogico.aspx?TP=TV",
+        "idPadre": 2243,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2246,
+        "nomFormulario": "TipoProyectos",
+        "direccion": "Proyectos/Pedagogico.aspx",
+        "idPadre": 2243,
+        "visible": false,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2259,
+        "nomFormulario": "22. ENFERMERIA",
+        "direccion": "1",
+        "idPadre": null,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2260,
+        "nomFormulario": "22.1 Registro enfermeria",
+        "direccion": "Enfermeria/ServicioEnfermeria.aspx",
+        "idPadre": 2259,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2262,
+        "nomFormulario": "22.2 Reportes Enfermeria",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes\\Enfermeria\\Enfermeria.xml",
+        "idPadre": 2259,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2331,
+        "nomFormulario": "22.3. Consentimiento Informado",
+        "direccion": "Administracion/RegistroConsentimiento.aspx",
+        "idPadre": 2259,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2333,
+        "nomFormulario": "22.4. Parametrizar grado",
+        "direccion": "Administracion/PermisoxGradoMes.aspx",
+        "idPadre": 2259,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2332,
+        "nomFormulario": "22.5. Parametrizar  Curso",
+        "direccion": "Administracion/PermisoxAlumno.aspx",
+        "idPadre": 2259,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2334,
+        "nomFormulario": "22.6. Seguimiento diario estudiantes",
+        "direccion": "Enfermeria/SeguimientoDiarioEstudiante.aspx",
+        "idPadre": 2259,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2335,
+        "nomFormulario": "22.7. Seguimiento diario rutas",
+        "direccion": "Enfermeria/SeguimientoDiarioDesdeRuta.aspx",
+        "idPadre": 2259,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2339,
+        "nomFormulario": "22.8. Seguimiento diario funcionarios",
+        "direccion": "Enfermeria/SeguimientoDiarioFuncionarios.aspx",
+        "idPadre": 2259,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2340,
+        "nomFormulario": "22.9. Excusar contacto COVID",
+        "direccion": "Enfermeria/AutorizaIngreso.aspx",
+        "idPadre": 2259,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2337,
+        "nomFormulario": "22.10. Reportes Alternancia",
+        "direccion": "Reportes/VisorReporteDos.aspx?Reportes=Reportes\\Enfermeria\\EnfermeriaAlternancia.xml",
+        "idPadre": 2259,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2342,
+        "nomFormulario": "22.11. Reportes Ficha Médica con Filtros",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes\\Enfermeria\\EnfermeriaFichaMedicaFiltros.xml",
+        "idPadre": 2259,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2271,
+        "nomFormulario": "23. Mensajeria",
+        "direccion": "1",
+        "idPadre": null,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2272,
+        "nomFormulario": "23.1 Buzon mensajes",
+        "direccion": "Mensaje/Mensaje.aspx",
+        "idPadre": 2271,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 3348,
+        "nomFormulario": "23.2. Reportes",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes\\Mensajes\\Mensajes.xml",
+        "idPadre": 2271,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2276,
+        "nomFormulario": "24. sistema PQR",
+        "direccion": "1",
+        "idPadre": null,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2277,
+        "nomFormulario": "24.1 Registro ",
+        "direccion": "Pqrs/RegistroPqr.aspx",
+        "idPadre": 2276,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2278,
+        "nomFormulario": "24.2 Seguimiento",
+        "direccion": "Pqrs/SeguimientoPqr.aspx",
+        "idPadre": 2276,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2279,
+        "nomFormulario": "24.3 Historial",
+        "direccion": "Pqrs/HistorialPqr.aspx",
+        "idPadre": 2276,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2293,
+        "nomFormulario": "24.4 Reportes",
+        "direccion": "Reportes/VisorReporte.aspx?Reportes=Reportes\\Pqrs\\SistemaPqrs.xml",
+        "idPadre": 2276,
+        "visible": true,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2300,
+        "nomFormulario": "Alumno Buscar - Emergente",
+        "direccion": "Alumno/AlumnoBuscar.aspx",
+        "idPadre": null,
+        "visible": false,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2303,
+        "nomFormulario": "Error",
+        "direccion": "Error.aspx",
+        "idPadre": null,
+        "visible": false,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 40,
+        "nomFormulario": "Visor reportes",
+        "direccion": "Reportes/VisorReporte.aspx",
+        "idPadre": null,
+        "visible": false,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 1143,
+        "nomFormulario": "Ayuda",
+        "direccion": "Ayuda.aspx",
+        "idPadre": null,
+        "visible": false,
+        "rutaIcono": null
+      },
+      {
+        "idFormulario": 2328,
+        "nomFormulario": "Visor reportes dos",
+        "direccion": "Reportes/VisorReporteDos.aspx",
+        "idPadre": null,
+        "visible": false,
+        "rutaIcono": null
+      }
+    ]
+  }
