@@ -32,7 +32,8 @@ const AxiosInterceptor = () => {
         return response;
       },
       (error) => {
-        distpatcher(setMessageBand({ title: "ServiceError", message: error.message, type: MessageBandType.Error }));
+        
+        distpatcher(setMessageBand({ title: "ServiceError", message: error.response.data, type: MessageBandType.Error }));
         return Promise.reject(error);
       }
     );

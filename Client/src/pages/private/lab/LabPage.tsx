@@ -7,10 +7,7 @@ import Counter from '../../../components/Counter/Counter';
 import Example from '../../exmaple/Example';
 import ComoponentRedux2 from '../../exmaple/components/ComoponentRedux2';
 import ComponentRedux1 from '../../../components/Redux/ComponentRedux1';
-import { MessageBand } from '../../../components/MessageBand';
 
-import { useSelector } from 'react-redux';
-import { AppStore } from '../../../redux/store';
 
 
 
@@ -18,7 +15,7 @@ export default function LabPage() {
   const [id, setId] = useState("");
   const [data, SetData] = useState([]);
   
-  const messageBand = useSelector((store : AppStore) => store.messageBand)
+  
   const fetchData = async () => {
     const { data } = await ComunesService(id);
     console.log(data);
@@ -28,7 +25,7 @@ export default function LabPage() {
   return (
     <>
     
-      {messageBand.message && <MessageBand title={messageBand.title} message={messageBand.message} type={messageBand.type} />}
+      
       <div>
         <img src={academicsLogo} className="logo" alt="Academics logo" />
       </div>
