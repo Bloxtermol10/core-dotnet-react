@@ -10,16 +10,18 @@ import AxiosInterceptor from './interceptors/axios.interceptor';
 import { Provider } from 'react-redux';
 import store from './redux/store';
 import { Root } from './Root';
+import persistStore from 'redux-persist/es/persistStore';
+import { PersistGate } from 'redux-persist/integration/react';
 
 const Login = lazy(() => import('./pages/login/Login'))
 const Private = lazy(() => import('./pages/private/Private'))
-
+let persistor = persistStore(store)
 function App() {
   return (
     <>
-
       <Suspense fallback={<div>Loading...</div>}>
         <Provider store={store}>
+          <PersistGate loading={<div>Loading...</div>} persistor={persistor} />
           <AxiosInterceptor />
           <Root>
             <BrowserRouter>
@@ -34,8 +36,6 @@ function App() {
           </Root>
         </Provider>
       </Suspense>
-
-
     </>
   )
 }

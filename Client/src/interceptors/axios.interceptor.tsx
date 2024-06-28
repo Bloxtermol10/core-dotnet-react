@@ -3,19 +3,25 @@ import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { setMessageBand } from "../redux/states/message-band.state";
 import { MessageBandType } from "../models/message-band.model";
+import { useSelector } from "react-redux";
+import { AppStore } from "../redux/store";
+
 
 const AxiosInterceptor = () => {
   const distpatcher = useDispatch();
+  let AuthState = useSelector((state : AppStore) => state.auth)
+  let token = AuthState.token
+  console.log(token)
 
   useEffect(() => {
     const updateHeader = (request : any) => {
-      const token = localStorage.getItem("token");
       const newHeader = {
         ...request.headers,
         Authorization: `Bearer ${token}`,
         "Content-Type": "application/json",
       };
       request.headers = newHeader;
+      console.log( "header",request.headers)
       return request;
     };
 

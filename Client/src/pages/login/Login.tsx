@@ -1,14 +1,15 @@
 import { useDispatch } from "react-redux"
-import { LoginService, UserInfoService } from "../../services/User.service"
+import { AuthService, UserInfoService } from "../../services/User.service"
 import { createUser, resetUser } from "../../redux/states/user"
 import { userAdapter } from "../../adapters/user.adapter"
 import { useSelector } from "react-redux"
-import { loginAdapter } from "../../adapters/login.adapter"
+import { AuthAdapter } from "../../adapters/auth-token.adapter"
 import { Link } from "react-router-dom"
 import { PrivateRoutes } from "../../models/routes"
 import { AppStore } from "../../redux/store"
 import { MessageBandType } from "../../models/message-band.model"
 import { setMessageBand } from "../../redux/states/message-band.state"
+import { clearAuth, setAuth } from "../../redux/states/auth.state"
 
 
 function Login() {
@@ -16,12 +17,15 @@ function Login() {
   const dispatch = useDispatch()
   const login = async (userName: string, password: string ) => {
    
-      const token = loginAdapter(await LoginService(userName,password))
+      const authRes = AuthAdapter(await AuthService(userName,password))
+      const token = authRes.token
       
       if(token) {
        dispatch(setMessageBand({ title: "Login", message: "Login", type: MessageBandType.Success }))
       }
-      localStorage.setItem('token', token.token)
+      console.log(authRes)
+      dispatch(setAuth(authRes))
+
       const user = userAdapter(await UserInfoService())
       console.log(" user", user)
       dispatch(createUser(user))
@@ -39,7 +43,7 @@ function Login() {
 
   }
   const handleLogout = () => {
-    localStorage.removeItem('token')
+    dispatch(clearAuth())
     dispatch(resetUser())
     dispatch(setMessageBand({ title: "Logout", message: "Logout", type: MessageBandType.Warning }))
 
